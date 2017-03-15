@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>JQuery ImageView Tests</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.min.css" rel="stylesheet" />
+  <link href="../src/css/jquery.imageview.css" rel="stylesheet" />
+</head>
+<body>
+
+  <div id="mocha"></div>
+  
+  <div id="iv">
+    <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Catherine_park_in_Tsarskoe_Selo_02.jpg/1280px-Catherine_park_in_Tsarskoe_Selo_02.jpg"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Catherine_park_in_Tsarskoe_Selo_02.jpg/200px-Catherine_park_in_Tsarskoe_Selo_02.jpg" alt="" /></a>
+    <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Vant_bridge.jpg/1280px-Vant_bridge.jpg"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Vant_bridge.jpg/200px-Vant_bridge.jpg" alt="" /></a>
+    <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Park_Pobedy_SPB_2.jpg/1280px-Park_Pobedy_SPB_2.jpg"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Park_Pobedy_SPB_2.jpg/200px-Park_Pobedy_SPB_2.jpg" alt="" /></a>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/expect.js/0.2.0/expect.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.min.js"></script>
+	<script src="../src/js/jquery.imageview.js"></script>
+
+  <script>mocha.setup('bdd')</script>
+  <script src="tests.js"></script>
+  <script>
+    mocha.checkLeaks();
+    mocha.globals(['jQuery']);
+    mocha.run();
+  </script>
+  
+</body>
+</html>

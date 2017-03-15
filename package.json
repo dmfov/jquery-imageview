@@ -1,0 +1,36 @@
+{
+  "name": "jquery-imageview",
+  "version": "1.0.0",
+  "description": "Small image viewer for JQuery",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://dmfov@github.com/dmfov/jquery-imageview.git"
+  },
+  "keywords": [
+    "jquery",
+    "image",
+    "viewer"
+  ],
+  "author": "Dmitry Andreev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dmfov/jquery-imageview/issues"
+  },
+  "homepage": "https://github.com/dmfov/jquery-imageview#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-uglify": "^2.1.2",
+    "jquery": "^3.2.1",
+    "mocha": "^3.2.0"
+  }
+}
